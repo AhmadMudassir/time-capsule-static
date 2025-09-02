@@ -6,14 +6,6 @@ import { AuthProvider } from 'react-oidc-context'
 import './index.css'
 
 // 1. Replace these values with YOUR details from Cognito!
-console.log('Environment variables:', {
-  VITE_COGNITO_DOMAIN: import.meta.env.VITE_COGNITO_DOMAIN,
-  VITE_CLIENT_ID: import.meta.env.VITE_CLIENT_ID,
-  VITE_REDIRECT_URI: import.meta.env.VITE_REDIRECT_URI
-});
-
-
-
 const cognitoAuthConfig = {
   authority: import.meta.env.VITE_COGNITO_DOMAIN,
   client_id: import.meta.env.VITE_CLIENT_ID,
